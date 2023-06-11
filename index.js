@@ -16,7 +16,7 @@ const salt = bcrypt.genSaltSync(5);
 const port = process.env.PORT;
 const secret = process.env.JWT_SECRET;
 
-app.use(cors({credentials:true,origin:'https://blog-app-mern-s5l3.onrender.com'}));
+app.use(cors({credentials:true,origin:'https://blog-client-v6mh.onrender.com'}));
 app.use(express.json());
 app.use(cookieParser());
 app.use('/uploads', express.static(__dirname + '/uploads'));
